@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Formular</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formular erstellen">
+  <meta name="author" content="Eugen (enbt0909)">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Persönliche Daten</legend>
+      <label for="firstname">🪪 Vorname:</label>
+      <input type="text" id="firstname" name="firstname" placeholder="Max" required>
+
+      <label for="lastname">🪪 Nachname:</label>
+      <input type="text" id="lastname" name="lastname" placeholder="Mustermann" required>
+
+      <div class="form-group">
+        <label for="street">🏠 Straße:</label>
+        <input type="text" id="street" name="street" class="street-input" placeholder="Musterstraße" required>
+        <label for="housenumber">🏠 Hausnummer:</label>
+        <input type="text" id="housenumber" name="housenumber" class="house-number-input" placeholder="1234" pattern="[0-9]{4}" required>
+      </div>
+
+      <label for="zipcode">🏠 Postleitzahl:</label>
+      <input type="text" id="zipcode" name="zipcode" placeholder="12345" required>
+
+      <label for="city">🏠 Stadt:</label>
+      <input type="text" id="city" name="city" placeholder="Musterstadt" required>
+
+      <label for="phone">☎️ 📱 Telefon:</label>
+      <input type="tel" id="phone" name="phone" placeholder="0123456789" required>
+
+      <label for="email">📧 E-Mail:</label>
+      <input type="email" id="email" name="email" placeholder="max.mustermann@example.com" required>
+
+      <label for="comments">📝 Kommentare:</label>
+      <textarea name="comments" id="comments" placeholder="Hier können Sie Ihre Kommentare eingeben" rows="4" cols="50"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Fähigkeiten</legend>
+      <label for="category">Kategorie:</label>
+      <select id="category" name="category" required>
+        <option value="">Bitte auswählen</option>
+        <option value="Webentwicklung">Webentwicklung</option>
+        <option value="Grafikdesign">Grafikdesign</option>
+        <option value="Datenanalyse">Datenanalyse</option>
+      </select>
+
+      <label for="programming">Programmiersprachen:</label>
+      <input type="checkbox" id="java" name="programming" value="Java">
+      <label for="java">Java</label>
+      <input type="checkbox" id="python" name="programming" value="Python">
+      <label for="python">Python</label>
+      <input type="checkbox" id="javascript" name="programming" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+
+      <label for="experience">Erfahrung:</label>
+      <input type="radio" id="beginner" name="experience" value="Anfänger">
+      <label for="beginner">Anfänger</label>
+      <input type="radio" id="intermediate" name="experience" value="Fortgeschritten">
+      <label for="intermediate">Fortgeschritten</label>
+      <input type="radio" id="advanced" name="experience" value="Experte">
+      <label for="advanced">Experte</label>
+
+      <label for="skill-comments">📝 Kommentare:</label>
+      <textarea id="skill-comments" name="skill-comments" placeholder="Hier können Sie Ihre Kommentare zu den Fähigkeiten eingeben" rows="4" cols="50"></textarea>
+    </fieldset>
+
+    <input type="submit" value="Absenden">
+  </form>
+</body>
+</html>

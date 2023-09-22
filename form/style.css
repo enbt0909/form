@@ -1,0 +1,105 @@
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  font-size: 50%; 
+}
+
+form {
+  max-width: 50rem; 
+  margin: 0 auto;
+  padding: 1rem; 
+  background-color: #ffffff;
+  border-radius: 0.2rem; 
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 1rem; 
+  padding-bottom: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 0.8rem; ;
+  font-size: 1.2rem; /* Verringerte Schriftgröße */
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+  margin-bottom: 0.6rem; 
+  background-color: #ffffff;
+  font-size: 0.8rem; 
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0.2rem #4CAF50;
+}
+
+select {
+  appearance: none;
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff 50%, #f2f2f2 50%);
+  background-size: 100% 0.1rem; 
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-right: 1.2rem; 
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 0.4rem;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="submit"] {
+  padding: 0.6rem 1.2rem; 
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+input[type="submit"]:hover {
+  opacity: .85;
+}
+
+/* Anordnung der Eingabefelder */
+.form-group {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.street-input {
+  flex: 2;
+}
+
+.house-number-input {
+  flex: 1;
+  max-width: 3rem;
+}
